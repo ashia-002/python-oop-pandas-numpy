@@ -1,3 +1,4 @@
+from collections import Counter
 #print("Hello, world")
 """
 THis is a multi
@@ -27,7 +28,8 @@ print("using list comprehension")
 [print(x) for x in myList]
 
 #? we are taking the elements containing 'a' and putting it to a new list and printing that list
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+from collections import Counter
+fruits = ["apple","apple", "banana", "cherry", "kiwi", "mango"]
 newlist = []
 
 for x in fruits:
@@ -38,3 +40,7 @@ print(newlist)
 
 for i in newlist:
     print(i)
+
+frut_count = Counter(fruits)
+print(frut_count)
+print(frut_count['apple'])
