@@ -29,7 +29,7 @@ print("using list comprehension")
 
 #? we are taking the elements containing 'a' and putting it to a new list and printing that list
 from collections import Counter
-fruits = ["apple","apple", "banana", "cherry", "kiwi", "mango"]
+fruits = ["apple","apple", "banana", "cherry", "kiwi", "kiwi", "mango"]
 newlist = []
 
 for x in fruits:
